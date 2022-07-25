@@ -1,0 +1,72 @@
+:root {
+    --font: 'Barlow Semi Condensed', sans-serif;
+    /* Primary */
+    --moderateViolet: hsl(263, 55%, 52%);
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Neutral */
+    --lightGray: hsl(0, 0%, 81%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--font);
+    font-size: 1.3rem;
+}
+/* Global */
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: var(--darkGrayishBlue);
+}
+h1 {
+    font-size: 8.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    color: var(--grayishBlue);
+    font-size: 1.9rem;
+    line-height: 3rem;
+}
+@media (min-width: 768px) {
+    p {
+        font-size: 1.7rem;
+    }
+}
+/* Utility */
+.center-text {
+    text-align: center;
+}
+.not-margin {
+    margin: 0;
+}
